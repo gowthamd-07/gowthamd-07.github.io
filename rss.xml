@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>pk0dev Blog</title>
+<author>Pravin Kumar</author>
+<link>rss.xml</link>
+<lastBuildDate>16 Aug 24 09:13 +0530</lastBuildDate>
+<description>pk0dev Blog</description>
+	<item>
+		<title>My First RSS Blog</title>
+		<link>rss.xml</link>
+		<pubDate>15 Aug 24 14:13 +0530</pubDate>
+		<description><![CDATA[<p>I'm planning to write at least one blog a week. I'll try to share all my learning of the week, interesting finds and my experiences. This would be a tool to reflect back on how far I've come whenever I feel low or to motivate myself.</p><p>I hope you I add some value with my blogs.</p><p>Thanks to <a href='https://github.com/TimoKats/mdrss'>Timo Kats](https://github.com/TimoKats), I'm wring my first RSS feed using his project on github called [mdrss</a>.</p><ul><li>---</li>]]></description>
+	</item>
+	<item>
+		<title>Publish Script For My RSS And Blog</title>
+		<link>rss.xml</link>
+		<pubDate>15 Aug 24 17:13 +0530</pubDate>
+		<description><![CDATA[<p>This is the script that I've written to publish my RSS and Blog</p><p>```bash</p><p>#!/bin/bash</p><p># Change the user and username in your script</p><p>BLOG=(/home/user/username.github.io/blog)</p><p>MD=(/home/user/blog)</p><p>blog_count=$(ls $BLOG | wc -l)</p><p>md_count=$(ls $MD | wc -l)</p><p># Get the latest markdown file name</p><p>latest_md=$(ls $MD -t | sort -r | head -n 1)</p><p># file name for new blog html</p><p>blog_name=$(find $MD -name "*" | sort -r | head -n 1 | xargs cat | head -n 1 | cut -c 3- | sed 's/ /_/g')</p><p># File count dose not match</p><p>if [[ $blog_count != $md_count ]];then</p><p>	i=$( ls $BLOG -t | head -n 1 | cut -d "." -f 1 )</p><p>	j=$( ls $MD -t | head -n 1 | cut -d "." -f 1 )</p><p>	# check if the index is unequal</p><p>	if [[ $i != $j ]]; then</p><p>		echo -e "New markdown found for the blog\nCreating HTML file for $latest_md"</p><p>		echo -e "Blog HTML file name will be:\t $blog_count.$blog_name.html\t and RSS feed will be updated\n"</p><p>		((blog_count++))</p><p>		read -p "Confirm: (y/n) " response</p><p>		if [[ $response =~ [yY]$ ]]; then</p><p>                        pandoc $MD/$latest_md -t html -o $BLOG/$blog_count.$blog_name.html</p><p>			echo "$blog_count.$blog_name.html file crated"</p><p>			mdrss update</p><p>			echo "rss.xml updated"</p><p>		else</p><p>			echo "Blog post abort"</p><p>			exit 1</p><p>		fi</p><p>		echo "Publish Blog and RSS"</p><p>		read -p "Confirm: (y/n) " response</p><p>		if [[ $response =~ [yY]$ ]]; then</p><p>			cd $WEBSITE</p><p>			git add .</p><p>			read -p "Enter your commit message" commit_message</p><p>			git commit -m "$commit_message"</p><p>			git push</p><p>			echo "Blog article added & RSS update successful"</p><p>		else</p><p>			echo "Blog post abort"</p><p>			exit 1</p><p>		fi</p><p>	else</p><p>		if [[ $i != $j ]]; then</p><p>			echo -e "The index of markdown and blog does not match\n!!!Attention needed\n\n$BLOG\n&\n$MD"</p><p>		else</p><p>			exit 0</p><p>		fi</p><p>	fi</p><p>else</p><p>	if [[ $blog_count == $md_count ]]; then</p><p>		if [[ $i != $j ]]; then</p><p>			echo "The index of markdown and blog does not match\n!!!Attention needed"</p><p>		else</p><p>			echo "All up to date"</p><p>			exit 0</p><p>		fi</p><p>	fi</p><p>fi</p><p>```</p><p>I use `mdrss` which I've mentioned in my previous post, this is a simple golang tool to convert your markdown files into rss feed file. Here is the <a href='https://github.com/TimoKats/mdrss'>link</a></p><p>I also use `md2html` which convert the markdown file into unformatted html file. You can install using `npm install -g markdown`.</p><p>I do suggest to set alias to change directory into your blog markdown files and your website in your `~/.bashrc` file</p><p>This file can be stored in the `/usr/local/bin/` to make accessible from any dir.</p><p>You can also find this script in my github repository and am open for any feedback and suggestions. <a href='https://github.com/pk0dev/rss-publish-script'>rss-publish-script</a></p><p>I hope this was useful to you and find some inspiration</p><ul><li>---</li>]]></description>
+	</item>
+</channel>
+</rss>
