@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="avatar-box" src="./assets/images/9488906256.jpg" alt="Gowtham D" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Gowtham D">Gowtham D</h1>
+
+          <p class="title">Site Reliability Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:gowtham8631@gmail.com" class="contact-link">gowtham8631@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919488906256" class="contact-link">+91 94889 06256</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>HSR Layout, Bengaluru</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/gowtham-d-80ba70192/" target="_blank" rel="noreferrer noopener" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/gowthamd-07" target="_blank" rel="noreferrer noopener" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+          </li>
+
+          <li class="social-item">
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Site Reliability Engineer from HSR Layout, Bengaluru, specializing in automation, cloud infrastructure, and continuous integration/continuous delivery (CI/CD) pipelines. I enjoy transforming complex systems into efficient, scalable, and reliable solutions.
+          </p>
+
+          <p>
+            My role is to ensure that your infrastructure is robust, secure, and optimized for performance, while also being easy to manage. I add a personal touch by tailoring solutions to meet your specific needs and ensuring seamless integration across your tech stack. My goal is to enable smooth operations and rapid deployments, helping you bring your products to market faster and with confidence.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <!--
+          - #RESUME
+        -->
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Site Reliability Engineer</h4>
+
+              <span>Nov 2023 — Present</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="timeline-text">
+                    <b class="color">--></b> Orchestrated a successful microservices-based ride-hailing application using Kubernetes on AWS EKS, Kafka on Strimzi, and a database on Aurora PostgreSQL.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Integrated the application with the Istio service mesh and Envoy web server.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Designed and implemented robust CI/CD pipelines to enhance development efficiency using a master-slave Jenkins architecture deployed in Kubernetes and Argo CD.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Automated infrastructure deployment with Terraform, ensuring scalability and reliability in AWS environments.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Integrated advanced logging and monitoring solutions using EFK, Prometheus, and Grafana for real-time insights.
+                  </li> 
+                </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">DevOps Engineer</h4>
+
+              <span>Jul 2022 — Nov 2023</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="timeline-text">
+                    <b class="color">--></b> Deployed both monolithic enterprise applications and microservice architectures using container orchestration on AWS ECS, databases on Amazon RDS with PostgreSQL and MySQL, and Kafka on AWS MSK.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Deployed applications to public cloud platforms such as Amazon Web Services (AWS) using CodePipeline, CodeBuild, and GitLab CI.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Integrated advanced logging and monitoring solutions using CloudWatch for real-time insights.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Utilized a range of AWS services, including EC2, S3, ECS, ALB, Auto Scaling, CloudWatch, CloudFront, Route 53, and VPC.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Successfully migrated applications from Heroku to AWS ECS and AWS RDS.
+                  </li> 
+                  <li class="timeline-text">
+                    <b class="color">--></b> Successfully migrated applications from Elastic Beanstalk to AWS ECS and AWS RDS.
+                  </li> 
+                </ul>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">KG College of Arts and Science</h4>
+
+              <span>2017 — 2022</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Project</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Yaary</h4>
+
+              <span>Nov 2023 — Present</span>
+
+              <p class="timeline-text">
+                Deployed the application on EKS with Aurora RDS and Strimzi Kafka, managed through Jenkins and Argo CD. The application operates 24/7 without interruption, with EFK, Grafana, and Prometheus handling monitoring and logging.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">DA Link</h4>
+
+              <span>Jan 2023 — Oct 2023</span>
+
+              <p class="timeline-text">
+                Used ECS with MySQL, Postgres RDS, and MSK Kafka. GitLab CI facilitated automated deployment, ensuring continuous operation. Monitoring and logging were managed through Splunk and CloudWatch.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Oneflexo</h4>
+
+              <span>Oct 2022 — Dec 2022</span>
+
+              <p class="timeline-text">
+                Migrated the application from Heroku and on-premises to ECS, utilizing ECS and Postgres RDS. CodePipeline handled automated deployment, with CloudWatch for monitoring and logging.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Trygg</h4>
+
+              <span>Jul 2022 — Sep 2022</span>
+
+              <p class="timeline-text">
+                Successfully migrated the Ruby application from Elastic Beanstalk to ECS and deployed it with ECS and Postgres RDS. CodePipeline facilitated automated deployment, with CloudWatch managing monitoring and logging.
+              </p>
+
+            </li>
+          
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certification</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AWS Certified Cloud Practitioner</h4>
+
+              <span>Jul 2022 — Dec 2026</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AWS Solution Architect - Associate</h4>
+
+              <span>Dec 2022 — Dec 2026</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Terraform</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Shell Scripting</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Kubernetes</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Jenkins</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">GitLab CI</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">EFK Stack</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Prometheus</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Grafana</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
