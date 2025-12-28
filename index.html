@@ -5,515 +5,266 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  <title>Gowtham D - DevOps Engineer</title>
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <main class="bento-grid">
 
-  <main>
+    <!-- PROFILE TILE -->
+    <div class="tile profile-tile">
+      <figure class="avatar-box">
+        <img src="./assets/images/9488906256.jpg" alt="Gowtham D" width="120">
+      </figure>
 
-    <!--
-      - #SIDEBAR
-    -->
+      <div class="profile-info">
+        <h1 class="name">Gowtham D</h1>
+        <p class="role">DevOps Engineer</p>
+        <p class="location">Bangalore, Karnataka</p>
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img class="avatar-box" src="./assets/images/9488906256.jpg" alt="Gowtham D" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Gowtham D">Gowtham D</h1>
-
-          <p class="title">DevOps Engineer</p>
+        <div class="social-links">
+          <a href="mailto:gowtham8631@gmail.com" class="social-link" title="Email">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+          <a href="tel:+919488906256" class="social-link" title="Phone">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </a>
+          <a href="https://linkedin.com/in/d-gowtham" target="_blank" class="social-link" title="LinkedIn">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://github.com/gowthamd-07" target="_blank" class="social-link" title="GitHub">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
         </div>
+      </div>
+    </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+    <!-- ABOUT TILE -->
+    <div class="tile about-tile">
+      <h3 class="h3 tile-title">> about_me</h3>
+      <p class="about-text">
+        DevOps Engineer with 3+ years of experience building, automating, and scaling cloud-native platforms across AWS,
+        Azure, and GCP.
+        Specialized in Kubernetes, GitOps, CI/CD automation, IaC, and cost optimization.
+        Proven record of delivering highly available infrastructure for mission-critical applications.
+      </p>
+    </div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+    <!-- SKILLS TILE -->
+    <div class="tile skills-tile">
+      <h3 class="h3 tile-title">> skills</h3>
 
+      <div class="skill-category">
+        <h5 class="h5">Cloud</h5>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">GCP</span>
+        </div>
       </div>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:gowtham8631@gmail.com" class="contact-link">gowtham8631@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919488906256" class="contact-link">+91 94889 06256</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>HSR Layout, Bengaluru</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/gowtham-d-80ba70192/" target="_blank" rel="noreferrer noopener" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/gowthamd-07" target="_blank" rel="noreferrer noopener" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-          </li>
-
-          <li class="social-item">
-          </li>
-
-        </ul>
-
+      <div class="skill-category">
+        <h5 class="h5">Orchestration</h5>
+        <div class="skill-tags">
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Helm</span>
+          <span class="skill-tag">Karpenter</span>
+          <span class="skill-tag">Istio</span>
+        </div>
       </div>
 
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm DevOps Engineer from HSR Layout, Bengaluru, specializing in automation, cloud infrastructure, and continuous integration/continuous delivery (CI/CD) pipelines. I enjoy transforming complex systems into efficient, scalable, and reliable solutions.
-          </p>
-
-          <p>
-            My role is to ensure that your infrastructure is robust, secure, and optimized for performance, while also being easy to manage. I add a personal touch by tailoring solutions to meet your specific needs and ensuring seamless integration across your tech stack. My goal is to enable smooth operations and rapid deployments, helping you bring your products to market faster and with confidence.
-          </p>
-        </section>
-
-        <!--
-          - service
-        -->
-
-        <!--
-          - #RESUME
-        -->
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Site Reliability Engineer</h4>
-
-              <span>Nov 2023 — Oct 2024</span>
-
-              <p class="timeline-text">
-                <ul>
-                  <li class="timeline-text">
-                    <b class="color">--></b> Orchestrated a successful microservices-based ride-hailing application using Kubernetes on AWS EKS, Kafka on Strimzi, and a database on Aurora PostgreSQL.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Integrated the application with the Istio service mesh and Envoy web server.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Designed and implemented robust CI/CD pipelines to enhance development efficiency using a master-slave Jenkins architecture deployed in Kubernetes and Argo CD.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Automated infrastructure deployment with Terraform, ensuring scalability and reliability in AWS environments.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Integrated advanced logging and monitoring solutions using EFK, Prometheus, and Grafana for real-time insights.
-                  </li> 
-                </ul>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DevOps Engineer</h4>
-
-              <span>Jul 2022 — Nov 2023</span>
-
-              <p class="timeline-text">
-                <ul>
-                  <li class="timeline-text">
-                    <b class="color">--></b> Deployed both monolithic enterprise applications and microservice architectures using container orchestration on AWS ECS, databases on Amazon RDS with PostgreSQL and MySQL, and Kafka on AWS MSK.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Deployed applications to public cloud platforms such as Amazon Web Services (AWS) using CodePipeline, CodeBuild, and GitLab CI.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Integrated advanced logging and monitoring solutions using CloudWatch for real-time insights.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Utilized a range of AWS services, including EC2, S3, ECS, ALB, Auto Scaling, CloudWatch, CloudFront, Route 53, and VPC.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Successfully migrated applications from Heroku to AWS ECS and AWS RDS.
-                  </li> 
-                  <li class="timeline-text">
-                    <b class="color">--></b> Successfully migrated applications from Elastic Beanstalk to AWS ECS and AWS RDS.
-                  </li> 
-                </ul>
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">KG College of Arts and Science</h4>
-
-              <span>2017 — 2022</span>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Project</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Yaary</h4>
-
-              <span>Nov 2023 — Oct 2024</span>
-
-              <p class="timeline-text">
-                Deployed the application on EKS with Aurora RDS and Strimzi Kafka, managed through Jenkins and Argo CD. The application operates 24/7 without interruption, with EFK, Grafana, and Prometheus handling monitoring and logging.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DA Link</h4>
-
-              <span>Jan 2023 — Oct 2023</span>
-
-              <p class="timeline-text">
-                Used ECS with MySQL, Postgres RDS, and MSK Kafka. GitLab CI facilitated automated deployment, ensuring continuous operation. Monitoring and logging were managed through Splunk and CloudWatch.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Oneflexo</h4>
-
-              <span>Oct 2022 — Dec 2022</span>
-
-              <p class="timeline-text">
-                Migrated the application from Heroku and on-premises to ECS, utilizing ECS and Postgres RDS. CodePipeline handled automated deployment, with CloudWatch for monitoring and logging.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Trygg</h4>
-
-              <span>Jul 2022 — Sep 2022</span>
-
-              <p class="timeline-text">
-                Successfully migrated the Ruby application from Elastic Beanstalk to ECS and deployed it with ECS and Postgres RDS. CodePipeline facilitated automated deployment, with CloudWatch managing monitoring and logging.
-              </p>
-
-            </li>
-          
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Certification</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AWS Certified Cloud Practitioner</h4>
-
-              <span>Jul 2022 — Dec 2026</span>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AWS Solution Architect - Associate</h4>
-
-              <span>Dec 2022 — Dec 2026</span>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">AWS</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Terraform</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Shell Scripting</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Kubernetes</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Jenkins</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">GitLab CI</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">EFK Stack</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Prometheus</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Grafana</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
+      <div class="skill-category">
+        <h5 class="h5">CI/CD & IaC</h5>
+        <div class="skill-tags">
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">Argo CD</span>
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h5 class="h5">Monitoring</h5>
+        <div class="skill-tags">
+          <span class="skill-tag">Prometheus</span>
+          <span class="skill-tag">Grafana</span>
+          <span class="skill-tag">ELK Stack</span>
+          <span class="skill-tag">CloudWatch</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h5 class="h5">Programming</h5>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Shell Scripting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE TILE -->
+    <div class="tile experience-tile">
+      <h3 class="h3 tile-title">> work_history</h3>
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">DevOps Engineer II - Invictus Data Inc</h4>
+          <span>Oct 2024 - Present</span>
+          <ul class="timeline-text">
+            <li><b class="color">•</b> Led AWS -> Azure migration with near-zero downtime across Kubernetes (EKS ->
+              AKS), PostgreSQL, Redis, messaging, monitoring, and CI/CD systems.</li>
+            <li><b class="color">•</b> Modernized legacy GCP workloads by migrating GCP VM -> GKE, containerizing
+              workloads, redesigning manifests, and restructuring pipelines.</li>
+            <li><b class="color">•</b> Reduced non-prod compute costs by up to 60% using Karpenter-managed Spot
+              capacity.</li>
+            <li><b class="color">•</b> Built scalable ETL pipelines (S3 -> MWAA -> Redshift -> Lambda) to automate
+              ingestion and analytics.</li>
+            <li><b class="color">•</b> Migrated logs from CloudWatch -> OpenSearch and integrated multi-cluster Grafana
+              dashboards, improving debugging speed.</li>
+            <li><b class="color">•</b> Improved reliability and performance for high-traffic e-commerce systems using
+              autoscaling, probes, and resource tuning.</li>
           </ul>
+        </li>
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">DevOps Engineer I - Triffy Digital</h4>
+          <span>Nov 2023 - Oct 2024</span>
+          <ul class="timeline-text">
+            <li><b class="color">•</b> Built and managed production-grade ride-hailing platform using AWS EKS, Aurora
+              PostgreSQL, and Strimzi Kafka.</li>
+            <li><b class="color">•</b> Integrated Istio service mesh for advanced routing, retry logic, traffic control,
+              and mTLS.</li>
+            <li><b class="color">•</b> Developed CI/CD pipelines using Jenkins (master-agent) + Argo CD enabling fully
+              automated, GitOps-driven deployments.</li>
+            <li><b class="color">•</b> Implemented infrastructure-as-code using Terraform to standardize deployments
+              across environments.</li>
+            <li><b class="color">•</b> Set up centralized monitoring and logging using EFK, Prometheus, Grafana,
+              improving MTTR by ~40%.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">DevOps Engineer I - Mallow Tech</h4>
+          <span>Jul 2022 - Nov 2023</span>
+          <ul class="timeline-text">
+            <li><b class="color">•</b> Deployed and managed monolithic & microservices applications using AWS ECS, RDS
+              (PostgreSQL), CloudWatch, and ALB.</li>
+            <li><b class="color">•</b> Built automated CI/CD pipelines with CodePipeline, CodeBuild, and GitLab CI.</li>
+            <li><b class="color">•</b> Integrated CloudWatch logs and metrics for application observability.</li>
+            <li><b class="color">•</b> Successfully executed Heroku -> AWS ECS + RDS migration with zero customer
+              impact.</li>
+            <li><b class="color">•</b> Managed core AWS services including EC2, S3, ALB, Auto Scaling, VPC, CloudFront,
+              and Route 53.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
 
-        </section>
+    <!-- PROJECTS TILE -->
+    <div class="tile projects-tile">
+      <h3 class="h3 tile-title">> projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4 class="h4">Viome – Ecommerce</h4>
+          <span class="project-tag">AWS/Azure</span>
+          <ul class="project-desc">
+            <li><b class="color">•</b> Scaled platform infrastructure to handle 3–5x Black Friday traffic spikes with
+              stable latency and zero degradation.</li>
+            <li><b class="color">•</b> Reduced compute expenses by 45–60% using Karpenter-based Spot orchestration.</li>
+            <li><b class="color">•</b> Designed and built an automated data pipeline (S3 -> MWAA -> Redshift -> Lambda)
+              improving ETL throughput and reporting accuracy.</li>
+            <li><b class="color">•</b> Migrated logging from CloudWatch -> OpenSearch, improving log search speed by
+              2–3x.</li>
+            <li><b class="color">•</b> Improved CI/CD using Helm + Argo CD, with GitOps, environment-based chart values,
+              and automated promotions.</li>
+            <li><b class="color">•</b> Led a multi-layer AWS -> Azure migration covering EKS, PostgreSQL, Redis, and
+              security.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h4 class="h4">Samsung Audience Gen</h4>
+          <span class="project-tag">GCP/GKE</span>
+          <ul class="project-desc">
+            <li><b class="color">•</b> Modernized legacy applications by migrating VM -> GKE, reducing infrastructure
+              overhead by ~40%.</li>
+            <li><b class="color">•</b> Containerized applications and deployed using GitOps (Argo CD) with automated
+              policies.</li>
+            <li><b class="color">•</b> Migrated databases to Cloud SQL (HA) improving query performance by 15–20%.</li>
+            <li><b class="color">•</b> Built CI/CD pipelines in GitHub Actions.</li>
+            <li><b class="color">•</b> Integrated Grafana + GCP Monitoring improving insight into latency, error rates,
+              and cluster performance.</li>
+            <li><b class="color">•</b> Implemented autoscaling, resource tuning, and probes.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h4 class="h4">Yaary Ride Hailing</h4>
+          <span class="project-tag">AWS EKS</span>
+          <ul class="project-desc">
+            <li><b class="color">•</b> Built and operated a high-availability EKS-based platform delivering 99.99%
+              uptime.</li>
+            <li><b class="color">•</b> Implemented Strimzi Kafka for real-time ride matching and trip lifecycle
+              streaming.</li>
+            <li><b class="color">•</b> Managed Aurora PostgreSQL for low-latency, high-throughput transactions.</li>
+            <li><b class="color">•</b> Developed CI/CD with Jenkins + Argo CD, reducing deployment time by ~40% with
+              GitOps.</li>
+            <li><b class="color">•</b> Implemented full-stack observability (Prometheus, Grafana, ELK) lowering MTTR by
+              ~40%.</li>
+            <li><b class="color">•</b> Applied HPA, PDBs, and Istio routing for surge-resistant workloads.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-      </article>
+    <!-- EDUCATION TILE -->
+    <div class="tile education-tile">
+      <h3 class="h3 tile-title">> education</h3>
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">M.Sc Software Systems</h4>
+          <span>KG College of Arts and Science</span>
+          <p class="timeline-desc">2017 – 2022 | 74.9%</p>
+        </li>
+      </ol>
+    </div>
 
+    <!-- CERTIFICATION TILE -->
+    <div class="tile certification-tile">
+      <h3 class="h3 tile-title">> certifications</h3>
+      <ul class="cert-list">
+        <li class="cert-item">
+          <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+          <div>
+            <h5 class="h5">AWS Certified Cloud Practitioner</h5>
+            <span class="cert-date">2022 – 2025</span>
+          </div>
+        </li>
+        <li class="cert-item">
+          <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+          <div>
+            <h5 class="h5">AWS Solutions Architect – Associate</h5>
+            <span class="cert-date">2022 – 2025</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- LANGUAGES TILE -->
+    <div class="tile languages-tile">
+      <h3 class="h3 tile-title">> languages</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">English</span>
+        <span class="skill-tag">Tamil</span>
+      </div>
     </div>
 
   </main>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
