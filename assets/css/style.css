@@ -88,18 +88,41 @@ body {
   #BENTO GRID LAYOUT
 \*-----------------------------------*/
 
+/*-----------------------------------*\
+  #BENTO GRID LAYOUT
+\*-----------------------------------*/
+
 .bento-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  grid-template-areas:
+    "profile"
+    "about"
+    "skills"
+    "exp"
+    "projects"
+    "edu"
+    "cert"
+    "lang";
+  gap: 15px;
   max-width: 1400px;
   margin-inline: auto;
-  padding: 20px;
+  padding: 15px;
 }
 
 @media (min-width: 768px) {
   .bento-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "profile profile"
+      "about about"
+      "skills skills"
+      "exp exp"
+      "projects projects"
+      "edu edu"
+      "cert lang";
+    gap: 20px;
+    padding: 20px;
   }
 }
 
@@ -109,7 +132,7 @@ body {
     grid-template-areas:
       "profile profile about about"
       "profile profile skills skills"
-      "exp exp skills skills"
+      "exp exp projects projects"
       "exp exp projects projects"
       "edu edu cert lang";
   }
@@ -120,13 +143,20 @@ body {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   backdrop-filter: var(--glass-blur);
-  border-radius: 24px;
-  padding: 30px;
+  border-radius: 20px;
+  padding: 20px;
   box-shadow: var(--shadow-1);
   transition: transform 0.3s ease, border-color 0.3s ease;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .tile {
+    border-radius: 24px;
+    padding: 30px;
+  }
 }
 
 .tile:hover {
@@ -137,9 +167,16 @@ body {
 .tile-title {
   font-family: 'JetBrains Mono', monospace;
   color: var(--orange-yellow-crayola);
-  margin-bottom: 25px;
-  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-size: 1rem;
   letter-spacing: -0.5px;
+}
+
+@media (min-width: 768px) {
+  .tile-title {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+  }
 }
 
 /* Profile Tile */
@@ -154,17 +191,24 @@ body {
 .profile-tile .avatar-box img {
   border-radius: 50%;
   border: 3px solid var(--orange-yellow-crayola);
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   box-shadow: 0 0 30px rgba(29, 185, 84, 0.2);
 }
 
 .profile-tile .name {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
   background: var(--text-gradient-yellow);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .profile-tile .name {
+    font-size: 2.8rem;
+  }
 }
 
 .profile-tile .role {
@@ -306,6 +350,33 @@ body {
   color: var(--white-2);
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+/* Bullet Point Styling */
+.timeline-text,
+.project-desc {
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.timeline-text li,
+.project-desc li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: var(--white-2);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.timeline-text li::before,
+.project-desc li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--orange-yellow-crayola);
+  font-weight: bold;
 }
 
 /* Projects */
