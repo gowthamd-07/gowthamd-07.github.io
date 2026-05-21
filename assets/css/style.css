@@ -241,6 +241,32 @@ body {
   transform: scale(1.1);
 }
 
+/* Download Button */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--orange-yellow-crayola);
+  color: var(--onyx);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: var(--transition-1);
+}
+
+.download-btn:hover {
+  background: var(--vegas-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4);
+}
+
+.download-btn ion-icon {
+  font-size: 1.2rem;
+  color: var(--onyx);
+}
+
 /* Specific Areas */
 .about-tile {
   grid-area: about;
