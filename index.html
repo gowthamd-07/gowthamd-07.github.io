@@ -44,6 +44,11 @@
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>
+
+        <a href="./Gowtham_D_Resume.pdf" download="Gowtham_D_Resume.pdf" class="download-btn">
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          Download Resume
+        </a>
       </div>
     </div>
 
@@ -72,13 +77,16 @@
       </div>
 
       <div class="skill-category">
-        <h5 class="h5">Orchestration</h5>
+        <h5 class="h5">Containers</h5>
         <div class="skill-tags">
-          <span class="skill-tag">Kubernetes</span>
           <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">EKS</span>
+          <span class="skill-tag">AKS</span>
+          <span class="skill-tag">GKE</span>
           <span class="skill-tag">Helm</span>
-          <span class="skill-tag">Karpenter</span>
           <span class="skill-tag">Istio</span>
+          <span class="skill-tag">Karpenter</span>
         </div>
       </div>
 
@@ -86,19 +94,11 @@
         <h5 class="h5">CI/CD & IaC</h5>
         <div class="skill-tags">
           <span class="skill-tag">Jenkins</span>
-          <span class="skill-tag">Argo CD</span>
-          <span class="skill-tag">Terraform</span>
           <span class="skill-tag">GitHub Actions</span>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <h5 class="h5">Monitoring</h5>
-        <div class="skill-tags">
-          <span class="skill-tag">Prometheus</span>
-          <span class="skill-tag">Grafana</span>
-          <span class="skill-tag">ELK Stack</span>
-          <span class="skill-tag">CloudWatch</span>
+          <span class="skill-tag">GitLab CI</span>
+          <span class="skill-tag">CircleCI</span>
+          <span class="skill-tag">ArgoCD</span>
+          <span class="skill-tag">Terraform</span>
         </div>
       </div>
 
@@ -106,7 +106,30 @@
         <h5 class="h5">Programming</h5>
         <div class="skill-tags">
           <span class="skill-tag">Python</span>
+          <span class="skill-tag">Golang</span>
           <span class="skill-tag">Shell Scripting</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h5 class="h5">Monitoring & Logging</h5>
+        <div class="skill-tags">
+          <span class="skill-tag">Prometheus</span>
+          <span class="skill-tag">Grafana</span>
+          <span class="skill-tag">CloudWatch</span>
+          <span class="skill-tag">Azure Monitor</span>
+          <span class="skill-tag">ELK</span>
+          <span class="skill-tag">OpenSearch</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h5 class="h5">Messaging</h5>
+        <div class="skill-tags">
+          <span class="skill-tag">Kafka</span>
+          <span class="skill-tag">AWS SQS</span>
+          <span class="skill-tag">Pub/Sub</span>
+          <span class="skill-tag">Azure Service Bus</span>
         </div>
       </div>
     </div>
@@ -119,48 +142,36 @@
           <h4 class="h4 timeline-item-title">DevOps Engineer II - Invictus Data Inc</h4>
           <span>Oct 2024 - Present</span>
           <ul class="timeline-text">
-            <li>Led AWS -> Azure migration with near-zero downtime across Kubernetes (EKS ->
-              AKS), PostgreSQL, Redis, messaging, monitoring, and CI/CD systems.</li>
-            <li>Modernized legacy GCP workloads by migrating GCP VM -> GKE, containerizing
-              workloads, redesigning manifests, and restructuring pipelines.</li>
-            <li>Reduced non-prod compute costs by up to 60% using Karpenter-managed Spot
-              capacity.</li>
-            <li>Built scalable ETL pipelines (S3 -> MWAA -> Redshift -> Lambda) to automate
-              ingestion and analytics.</li>
-            <li>Migrated logs from CloudWatch -> OpenSearch and integrated multi-cluster Grafana
-              dashboards, improving debugging speed.</li>
-            <li>Improved reliability and performance for high-traffic e-commerce systems using
-              autoscaling, probes, and resource tuning.</li>
+            <li>Led AWS-to-Azure Kubernetes migration for production workloads with 99.95% service availability and near-zero downtime.</li>
+            <li>Drove cloud cost optimization programs across Azure workloads, reducing monthly spend by $82K (46%) from a peak of $178K to $97K, while maintaining platform performance and reliability.</li>
+            <li>Implemented service mesh capabilities including mTLS and traffic control across 50+ microservices.</li>
+            <li>Modernized legacy GCP VM-based applications by migrating them to GKE, reducing operational overhead by 40%+.</li>
+            <li>Designed and automated ETL pipelines processing 10M+ records daily using S3, MWAA, Redshift, and Lambda.</li>
+            <li>Migrated centralized logging from CloudWatch to OpenSearch, reducing troubleshooting time by 50%.</li>
+            <li>Built GitOps-driven CI/CD platforms using Circle CI, and Argo CD, reducing deployment time by 60%.</li>
+            <li>Implemented autoscaling and reliability improvements that successfully handled 5x traffic spikes during peak sales events.</li>
           </ul>
         </li>
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">DevOps Engineer I - Triffy Digital</h4>
           <span>Nov 2023 - Oct 2024</span>
           <ul class="timeline-text">
-            <li>Built and managed production-grade ride-hailing platform using AWS EKS, Aurora
-              PostgreSQL, and Strimzi Kafka.</li>
-            <li>Integrated Istio service mesh for advanced routing, retry logic, traffic control,
-              and mTLS.</li>
-            <li>Developed CI/CD pipelines using Jenkins (master-agent) + Argo CD enabling fully
-              automated, GitOps-driven deployments.</li>
-            <li>Implemented infrastructure-as-code using Terraform to standardize deployments
-              across environments.</li>
-            <li>Set up centralized monitoring and logging using EFK, Prometheus, Grafana,
-              improving MTTR by ~40%.</li>
+            <li>Designed and managed highly available Kubernetes infrastructure across AWS, achieving 99.9% uptime.</li>
+            <li>Automated infrastructure provisioning with Terraform, reducing environment setup time from days to less than 1 hour.</li>
+            <li>Deployed and managed Strimzi Kafka clusters processing millions of events daily.</li>
+            <li>Built centralized observability using EFK, Prometheus, and Grafana, reducing MTTR by 40%.</li>
+            <li>Developed reusable Helm charts and Kubernetes templates, reducing deployment configuration effort by 80%.</li>
           </ul>
         </li>
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">DevOps Engineer I - Mallow Tech</h4>
           <span>Jul 2022 - Nov 2023</span>
           <ul class="timeline-text">
-            <li>Deployed and managed monolithic & microservices applications using AWS ECS, RDS
-              (PostgreSQL), CloudWatch, and ALB.</li>
-            <li>Built automated CI/CD pipelines with CodePipeline, CodeBuild, and GitLab CI.</li>
-            <li>Integrated CloudWatch logs and metrics for application observability.</li>
-            <li>Successfully executed Heroku -> AWS ECS + RDS migration with zero customer
-              impact.</li>
-            <li>Managed core AWS services including EC2, S3, ALB, Auto Scaling, VPC, CloudFront,
-              and Route 53.</li>
+            <li>Built CI/CD pipelines using GitLab CI, AWS CodePipeline, and CodeBuild, reducing deployment effort by 75%.</li>
+            <li>Automated deployments using Shell and Python, saving 20+ engineering hours weekly.</li>
+            <li>Managed AWS infrastructure including ECS, EC2, RDS, ALB, Auto Scaling, Route53, and CloudFront supporting 10+ services.</li>
+            <li>Successfully migrated production applications from Heroku to AWS ECS and RDS with zero downtime.</li>
+            <li>Implemented centralized monitoring and logging with CloudWatch, reducing incident detection time by 60%.</li>
           </ul>
         </li>
       </ol>
